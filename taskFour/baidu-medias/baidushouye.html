@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" type="text/css" href="css/baiduPC.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" type="text/css" href="css/baiduAPP.css" media="screen and (max-width:767px)" >
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!--[if lt IE 9]>
+        <script src="js/html5.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    @media screen and (min-width:768px) {
+        #container {
+            display: block;
+        }
+
+        #page {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        #container {
+            display: none;
+        }
+
+        #page {
+            display: block;
+        }
+    }
+</style>
+</head>
+<body>
+<!--PC start-->
+  <div id="container">
+    <!--header start -->
+    <header>
+    <nav>
+    <ul>
+        <a href="http://www.nuomi.com/?cid=002540" class="mnav">糯米</a>
+        <a href="http://news.baidu.com" class="mnav">新闻</a>
+        <a href="http://www.hao123.com" class="mnav">hao123</a>
+        <a href="http://map.baidu.com" class="mnav">地图</a>
+        <a href="http://v.baidu.com" class="mnav">视频</a>
+        <a href="http://tieba.baidu.com" class="mnav">贴吧</a>
+        <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" class="lb">登录</a>
+        <a href="http://www.baidu.com/gaoji/preferences.html" class="py">设置</a>
+        <a href="http://www.baidu.com/more/" class="bry">更多产品</a>
+    </ul>
+    </nav>
+    </header>
+    <!-- 设置下拉 start-->
+    <div class="bdpfmenu">
+        <div class="bdnuarrow">
+            <em style="border-bottom-color: #d8d8d8;"></em><i style="border-bottom-color: #fff;"></i>
+        </div>
+        <a class="setpref" href="javascript:;">搜索设置</a>
+        <a href="//www.baidu.com/gaoji/advanced.html" target="_blank">高级搜索</a>
+        <a href="javascript:;">关闭预测</a><a href="javascript:;">搜索历史</a>
+    </div>
+    <!-- 设置下拉 end-->
+    <!-- 更多产品下拉 start-->
+    <div class="bdbri bdbriimg">
+        <div class="bdmainlink">
+            <div class="bdbriimgtitle">
+                    更多产品
+            </div>
+            <div class="briscrollwrapperContainer">
+                <div class="briscrollwrapper bdbriscroll-ctrl-content bdbriscroll-onwheel">
+                    <div class="bdbriwrapper">
+                        <a href="http://music.baidu.com" name="tj_mp3"><span class="bdbriimgitem_3"></span>音乐</a>
+                        <a href="http://image.baidu.com" name="tj_img"><span class="bdbriimgitem_4"></span>图片</a>
+                        <a href="http://zhidao.baidu.com" name="tj_zhidao"><span class="bdbriimgitem_2"></span>知道</a>
+                        <a href="http://wenku.baidu.com" name="tj_wenku"><span class="bdbriimgitem_5"></span>文库</a>
+                        <a href="http://top.baidu.com" name="tj_bang"><span class="bdbriimgitem_6"></span>风云榜</a>
+                        <div class="bdbrievenmore">
+                            <a href="//www.baidu.com/more/" name="tj_more">全部产品&gt;&gt;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bdbriscroll-ctrl-scroll">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 更多产品下拉 end-->
+    <!--header end-->
+    <!--mian start-->
+    <section class="s_form">
+        <div id="main">
+            <div class="logo">
+                <img src="img/bd_logo1.png" width="270" height="129" title="百度首页LOGO">
+            </div>
+            <form id="form" action="https://www.baidu.com/s" method="get" target="_blank">
+                <span class="input-box">
+                <span class="soutu-btn"></span>
+                <input id="kw" name="wd" class="input-text" value="" autofocus="autofocus">
+                </span>
+                <span class="bdyx-box"><input type="submit" id="su" value="百度一下" class="bdyx-text"></span>
+                <!-- 照相机click start-->
+                <div class="soutu-layer">
+                    <div class="soutu-url">
+                        <span class="soutu-url-wrap">
+                            <input id="soutu-url-kw" class="soutu-url-kw" maxlength="255" placeholder="在此处粘贴图片网址">
+                        </span>
+                        <span class="soutu-url-btn">
+                            <i class="soutu-icon soutu-url-btn-icon"></i>
+                        </span>
+                    </div>
+                    <div class="soutu-state-normal">
+                        <div class="soutu-drop">
+                            <span class="soutu-drop-tip">拖拽图片到这里</span><i class="soutu-icon soutu-drop-icon"></i>
+                        </div>
+                        <div class="upload-wrap">
+                            <input type="file" class="upload-pic" value="上传图片">
+                            <i class="soutu-icon upload-icon"></i>
+                            <span class="upload-text">本地上传图片</span>
+                        </div>
+                    </div>
+                    <a class="soutu-icon soutu-close" href="javascript:void(0);"></a>
+                </div>
+                <!-- 照相机click end-->
+            </form>
+        </div>
+   </section>
+    <!--mian end-->
+    <!--footer start-->
+    <footer id="ftCon">
+        <div class="ftCon-Wrapper">
+            <div id="qrcode">
+                <div class="qrcode-item qrcode-item-1">
+                    <div class="qrcode-img">
+                    </div>
+                    <div class="qrcode-text">
+                        <p>
+                            <b>手机百度</b>
+                        </p>
+                        <p>
+                            <span>快人一步</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="qrcode-item qrcode-item-2">
+                    <div class="qrcode-img">
+                    </div>
+                    <div class="qrcode-text">
+                        <p>
+                            <b>百度糯米</b>
+                        </p>
+                        <p>
+                            <span>一元大餐</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="ftConw">
+                <p id="lh">
+                    <a id="setf" href="//www.baidu.com/cache/sethelp/help.html" target="_blank">把百度设为主页</a>
+                    <a href="http://home.baidu.com">关于百度</a>
+                    <a href="http://ir.baidu.com">About&nbsp;&nbsp;Baidu</a>
+                    <a href="http://e.baidu.com/?refer=888">百度推广</a>
+                </p>
+                <p id="cp">
+                    ©2016&nbsp;Baidu&nbsp;<a href="http://www.baidu.com/duty/">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com/" class="cp-feedback">意见反馈</a>&nbsp;京ICP证030173号&nbsp;<i class="jgwablogo"></i>
+                </p>
+                <a id="jgwab" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">
+                <i class="jgwablogo" style="background-position: -623px -96px;margin-right: 6px;"></i>京公网安备11000002000001号</a>
+            </div>
+        </div>
+    </footer>
+    <!--footer end-->
+  </div>  
+<script type="text/javascript" src="js/baidu-2.js"></script>
+<!--PC end-->
+
+<!--APP start-->
+    <div id="page">
+      <div id="index-card">
+        <!--header start--> 
+        <div id="weather">
+          <div class="weather-outline">
+            <div class="icon-weather-default">
+              
+            </div>
+            <div class="weather-num">
+              17°
+            </div>
+            <div class="weather-status">
+              <p>
+                北京
+              </p>
+              <p>
+                空气&nbsp;260
+              </p>
+            </div>
+            <i class="icon-down">
+            </i>
+          </div>
+          <div class="weather-shield" style="height: 248px">
+          </div>
+        </div>
+        <div id="header">
+          <div id="userinfo-wrap">
+            <div id="login-wraps">
+              <a id="login" class="icon-login" href="http://wappass.baidu.com/passport/?login&amp;tpl=wimn&amp;ssid%3D0%26amp%3Bfrom%3D%26amp%3Buid%3D%26amp%3Bpu%3Dsz%2540224_220%252Cta%2540iphone___3_537%26amp%3Bbd_page_type%3D1&amp;tn=&amp;regtype=1&amp;u=https%3A%2F%2Fm.baidu.com">
+              </a>
+            </div>
+          </div>
+          <div id="skin-wrap">
+            <a id="skin" href="javascript:;">
+              <i class="icon-skin"></i>
+            </a>
+          </div>
+          <div id="logo" class="noTapColor">
+            <img src="img/plus_logo.png" width="181" height="57" alt="百度一下,你就知道">
+          </div>
+          <form  class="se-form" id="index-form" method="get" autocomplete="off">
+            <div class="con-wrap">
+              <input type="text" autocomplete="off" autocorrect="off" maxlength="64"
+              id="index-kw" name="word" class="se-input adjust-input">
+              <div class="se-inner">
+              </div>
+              <button id="index-bn" class="se-bn" type="submit">
+                百度一下
+              </button>
+            </div>
+        </div>
+        </form>
+        <!--nav start-->  
+        <div id="navs">
+          <div id="ns-swipe" class="ns-swipe">
+            <div class="ns-swipe-wrap">
+              <div class="ns-swipe-item">
+                <a class="ns-item menu-item-0" href="javascript:;" id="" >
+                  <i class="ns-focus ns-icon">
+                  </i>
+                  <span class="ns-text">
+                    关注
+                  </span>
+                </a>
+                <a class="ns-item" href="http://m.news.baidu.com/news?fr=mohome&amp;ssid=0&amp;from=&amp;uid=&amp;pu=sz%40224_220%2Cta%40iphone___3_537&amp;bd_page_type=1">
+                  <i class="ns-news ns-icon">
+                  </i>
+                  <span class="ns-text">
+                    新闻
+                  </span>
+                </a>
+                <a class="ns-item" href="http://dushu.m.baidu.com" >
+                  <i class="ns-novel ns-icon">
+                  </i>
+                  <span class="ns-text">
+                    小说
+                  </span>
+                </a>
+                <a class="ns-item" href="http://video.m.baidu.com/?from=wise_nav">
+                  <i class="ns-video ns-icon">
+                  </i>
+                  <span class="ns-text">
+                    视频
+                  </span>
+                </a>
+                <a class="ns-item" href="https://m.nuomi.com/?cid=wise_shouye_nuomi">
+                  <i class="ns-life ns-icon">
+                  </i>
+                  <span class="ns-text">
+                    糯米
+                  </span>
+                </a>
+                <a class="ns-item" href="http://map.baidu.com/mobile/webapp/index/index/?itj=45&amp;wtj=wi&amp;ssid=0&amp;from=&amp;uid=&amp;pu=sz%40224_220%2Cta%40iphone___3_537&amp;bd_page_type=1">
+                  <i class="ns-map ns-icon">
+                  </i>
+                  <span class="ns-text">
+                    地图
+                  </span>
+                </a>
+              </div>
+            </div>
+            <ul class="ns-swipe-menu">
+              <li class="ns-swipe-tab ns-swipe-tab-active">
+              </li>
+              <li class="ns-swipe-tab ns-swipe-tab-mr0">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--nav end-->  
+      </div>
+    </div>
+<!--header end-->
+  <div id="tab_news">
+    <!--main start--> 
+    <div class="tab-news-content water-container">
+      <div class="news-list-wrapper">
+        <div class="news-item tpl-3">
+          <a href="https://m.baidu.com?action=newsdetail&amp;nid=15928672636690134427">
+            <div class="text-content">
+              <h2>
+                德国媒体预测中国未来30年 看到最后都傻了
+                <span class="hotRec hotRec-1">
+                </span>
+              </h2>
+            </div>
+            <div class="pic-content">
+              <div class="img-wrap">
+                <img src="img/deguo.JPEG">
+              </div>
+              <div class="img-wrap">
+                <img src="img/deguo2.JPEG">
+              </div>
+              <div class="img-wrap">
+                <img src="img/deguo3.JPEG">
+              </div>
+            </div>
+            <div class="news-from">
+              <span class="src-net">
+                搜狐历史
+              </span>
+              <span class="src-time">
+                10-13
+              </span>
+              <span class="src-icon-1">
+              </span>
+            </div>
+          </a>
+        </div>
+        <div class="news-item tpl-3">
+          <a href="https://m.baidu.com?action=newsdetail&amp;nid=4160834924371865008">
+            <div class="text-content">
+              <h2>
+                直击7张大学生女宿舍里的私下生活照
+                <span class="hotRec hotRec-1">
+                </span>
+              </h2>
+            </div>
+            <div class="pic-content">
+              <div class="img-wrap">
+                <img src="img/nvsheng.JPEG">
+              </div>
+              <div class="img-wrap">
+                <img src="img/nvsheng2.JPEG">
+              </div>
+              <div class="img-wrap">
+                <img src="img/nvsheng3.JPEG">
+              </div>
+            </div>
+            <div class="news-from">
+              <span class="src-net">
+                女神范
+              </span>
+              <span class="src-time">
+                10-12
+              </span>
+              <span class="src-icon-1">
+              </span>
+            </div>
+          </a>
+        </div>
+        <div class="news-item tpl-3">
+          <a href="https://m.baidu.com?action=newsdetail&amp;nid=17641851296606199236">
+            <div class="text-content">
+              <h2>
+                三十年前修阴宅，三十年后得富贵
+                <span class="hotRec hotRec-1">
+                </span>
+              </h2>
+            </div>
+            <div class="pic-content">
+              <div class="img-wrap">
+                <img src="img/yinzai.JPEG">
+              </div>
+              <div class="img-wrap">
+                <img src="img/yinzai2.JPEG">
+              </div>
+              <div class="img-wrap">
+                <img src="img/yinzai3.JPEG">
+              </div>
+            </div>
+            <div class="news-from">
+              <span class="src-net">
+                搜狐新闻
+              </span>
+              <span class="src-time">
+                10-12
+              </span>
+              <span class="src-icon-1">
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--main end--> 
+    <!--footer start--> 
+    <div id="foot">
+      <div>
+        <a href="http://ufosdk.baidu.com/?m=Client&amp;a=commonsubmit&amp;appid=517&amp;activityId=1&amp;needEmail=false&amp;bw=0A08B21B4CC156B7D0E46DBBA854C82D&amp;kw=&amp;tn=iphone&amp;pageid=6">
+          <i class="icon-feedback"></i>
+          用户反馈
+        </a>
+      </div>
+      <a id="index-copyright" href="https://www.baidu.com/duty/wise/wise_index.html">
+        使用百度前必读&nbsp;Baidu&nbsp;京ICP证030173号
+      </a>
+      <a class="recordcode" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" target="_blank">
+        <i>
+        </i>
+        京公网安备11000002000001号
+      </a>
+    </div>
+     <!--footer end--> 
+  </div>
+ <!--APP end--> 
+</body>
+</html>

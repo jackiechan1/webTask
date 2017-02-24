@@ -1,0 +1,302 @@
+/*  login CSS start  */
+@font-face {
+  font-family:'FontAwesome';
+  src:url('font/fontawesome-webfont.eot');
+  src:url('font/fontawesome-webfont.eot') format('embedded-opentype'),
+  url('font/fontawesome-webfont.woff') format('woff'),
+  url('font/fontawesome-webfont.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal
+}
+
+body {
+  color: #2c3e50;
+  background: #bdc3c7;
+  background-size: 100% 100%;
+}
+
+body.login .wrapper {
+  padding: 20px;
+  background-color: #ecf0f1;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 0 2px rgba(0,0,0,0.04);
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.3);
+  margin: 10% auto;
+  width: 300px;
+}
+
+body.login .wrapper .brand h1 .logo-icon {
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  padding: 15px;
+  border-radius: 40px;
+  background: #2c3e50;
+}
+
+.icon-spinner {
+  color: #428bca;
+  font-size: 140%;
+}
+/*  login CSS end  */
+
+/*  index CSS start  */
+@media screen and (max-width:1200px) {
+  .content {
+    padding-left: 10px!important;
+  }
+}
+/*  字体图标引用 */
+@font-face {
+  font-family:'FontAwesome';
+  src:url('font/fontawesome-webfont.eot');
+  src:url('font/fontawesome-webfont.eot') format('embedded-opentype'),
+  url('font/fontawesome-webfont.woff') format('woff'),
+  url('font/fontawesome-webfont.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal
+}
+
+/*  header CSS start  */
+.logo {
+  width: 113px;
+  padding: 5px 5px;
+}
+
+.navbar-form input[type="text"] {
+  border-radius: 17px;
+  font-weight: 700;
+  text-indent: 1.5em;
+}
+
+.icon-search {
+  position: absolute;
+  top: 17px;
+  color: #bbb;
+  padding-left: 10px;
+}
+
+.dropdown {
+  line-height: 50px;
+  margin-right: 20px;
+}
+
+.dropdown:hover ul {
+  display: block;
+}
+
+/*  header CSS end  */
+
+/*  main CSS start  */
+.content {
+  background: #eee;
+  position: relative;
+  padding:30px 15px 0 90px;
+}
+
+/*  leftnav CSS start  */
+#nav {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 50px;
+  bottom: 0;
+  border-right: 1px solid #162636;
+  background: #222;
+}
+
+.nav-primary li {
+  line-height: 1.5;
+  text-align: center;
+}
+
+.nav-primary > ul > li.active > a {
+  border-left: 2px solid #13c4a5;
+  padding-left: 9px;
+}
+
+.nav-primary > ul > li.active > a {
+  color: #e1e5e9;
+  background-color: transparent;
+  transition: color .3s ease-in-out 0s;
+}
+
+.nav-primary > ul > li > a {
+  color: #8e9eae;
+  padding: 10px 10px;
+  position: relative;
+  font-weight: 600;
+}
+
+.nav-vertical > ul > li > a > i {
+  display: block;
+  font-size: 2em;
+  margin: 2px auto;
+}
+
+.pst {
+  left: 84px;
+  top: -3px;
+}
+
+.dropdown-submenu:hover ul {
+  display: block;
+}
+/*  leftnav CSS end  */
+
+.page-header {
+  border-bottom: 1px solid #fff;
+}
+
+.btn.btn-circle, .btn.btn-circle.disabled {
+  padding: 2px 5px;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+  color: #3a5a7a;
+  font-weight: 300;
+  transition: none;
+}
+
+.m-b {
+  margin-bottom: 15px;
+}
+
+.btn-circle b.badge {
+  position: relative;
+  left: 3px;
+  top: -68px;
+  background: #fff;
+  color: #919599;
+}
+
+.btn-circle .icon-plus:hover {
+  background: #37B65A;
+  color: #fff;
+}
+
+.btn-white:hover .icon-envelope-alt {
+  background: #37B65A;
+  color: #fff;
+}
+
+.btn-primary.btn-circle > i {
+  color: #fff;
+  background: linear-gradient(#5be032,#13c4a5)
+}
+
+.btn-primary.btn-circle:hover i {
+  opacity: 0.8;
+}
+
+.btn-success.btn-circle > i {
+  color: #fff;
+  background-color: #b42e5c;
+}
+
+.btn-success.btn-circle:hover i {
+  opacity: 0.8;
+}
+
+.btn-info.btn-circle > i {
+  color: #fff;
+  background: linear-gradient(#45B5DA,#0382AD);
+}
+
+.btn-info.btn-circle:hover i {
+  opacity: 0.8;
+}
+
+.btn-inverse.btn-circle > i {
+  color: #fff;
+  background-color: #233445;
+}
+
+.btn-inverse.btn-circle:hover i {
+  opacity: 0.8;
+}
+
+.btn-warning.btn-circle > i {
+  color: #fff;
+  background-color: #f4c414;
+}
+
+.btn-warning.btn-circle:hover i {
+  opacity: 0.8;
+}
+
+.btn-danger.btn-circle > i {
+  color: #fff;
+  background-color: #ff5f5f;
+}
+
+.btn-danger.btn-circle:hover i {
+  opacity: 0.8;
+}
+
+.btn-circle .icon-plus {
+  background-color: #e5e9ed;
+}
+
+.col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+/*  main CSS end  */
+
+/*  footer CSS start  */
+.btn-twitter.btn-circle > i {
+  color: #fff;
+  background-color: #00c7f7;
+}
+
+.btn-facebook.btn-circle > i {
+  color: #fff;
+  background-color: #335397;
+}
+
+.btn-mini {
+  padding: 3px 6px;
+  font-size: 10.5px;
+  border-radius: 3px;
+}
+
+.btn-circle.btn-mini > i {
+  width: 30px;
+  height: 30px;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.btn-gplus.btn-circle > i {
+  color: #fff;
+  background-color: #dd4a38;
+}
+
+.btn-circle > i {
+  color: #a5b6c7;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  padding: 18px 0;
+  font-size: 24px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 6px;
+  line-height: normal;
+  transition: all .3s ease-in-out 0s;
+}
+
+footer {
+  background: #eee;
+  padding-top: 10px;
+}
+/*  footer CSS end  */
+
+/*  index CSS end  */

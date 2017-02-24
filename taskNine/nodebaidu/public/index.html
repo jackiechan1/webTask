@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>百度新闻中心</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="css/Normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/baidu-news.css">
+  <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+</head>
+<body>
+   <!--  header start  -->
+    <header>
+    <a href="#"><i class="iconfont icon-baidu01"></i></a>
+    <a href="#"><i class="iconfont icon-ren"></i></a>
+    <a href="#"><i class="iconfont icon-shizi"></i></a>
+    <a href="#"><i class="iconfont icon-sousuo_sousuo"></i></a>
+    </header>
+   <!--  header end  -->
+   <!--  nav start  -->
+    <nav>
+    <ul>
+      <li>精选<b></b></li>
+      <li>百家<b></b></li>
+      <li>本地<b></b></li>
+      <li>娱乐<b></b></li>
+      <li>社会<b></b></li>
+      <li>军事<b></b></li>
+      <li>女人<b></b></li>
+      <li>搞笑<b></b></li>
+      <li>互联网<b></b></li>
+      <li>科技<b></b></li>
+      <li>更多<i class="iconfont icon-xiangxia"></i><b></b></li>
+    </ul>
+    </nav>
+    <!--  nav end  -->
+    <!--  content start  -->
+    <article class="content">
+    <ul class="news-lists">
+    </ul>
+    </article>
+    <!--  content end  -->
+  <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="js/baidu-news.js"></script>
+  <script type="text/javascript">
+       //导航li长度的控制
+      var navWidth=$("nav").width();
+      $("nav ul li").each(function(index,value){
+        if($(value).text().split("").length>2)
+        {
+           $(value).width(navWidth/3);
+        }else {
+            $(value).width(navWidth/6); 
+        }
+      });
+  </script>
+</body>
+</html>

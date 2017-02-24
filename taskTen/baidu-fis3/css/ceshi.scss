@@ -1,0 +1,7 @@
+@mixin flex($a){
+	flex:$a;
+}
+
+.ceshi{
+	@include flex(1 0 200px);
+}

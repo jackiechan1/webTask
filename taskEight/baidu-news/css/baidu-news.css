@@ -1,0 +1,106 @@
+html {
+    height: 100%;
+    font-size:62.5%;
+    font-family:arial;
+}
+body {
+    height: 100%;
+}
+header {
+    background:#3e98f0 url(../img/baidulog.png) no-repeat center 10px;
+    background-size:6em;
+    height: 48px;
+    border-bottom: 1px solid #5dabf0;
+}
+header a {
+    text-decoration:none;
+}
+header a:nth-child(1),header a:nth-child(2) {
+    float:left;
+    margin:0 1rem;
+}
+header a:nth-child(4),header a:nth-child(3) {
+    float:right;
+    margin:0 1rem;
+}
+header a .iconfont {
+    font-size: 2rem;
+    line-height:48px;
+    color:#fff;
+}
+nav {
+    width:100%;
+    background:#3e98f0;
+    font-size: 0;
+}
+nav ul {
+    font-size: 0;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    font-size: 1.8rem;
+    color: #fff;
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    padding:1rem 0 ;
+    text-align:center;
+}
+nav ul li b {
+    position: relative;
+    border-right: 1px solid #5dabf0;
+    display: inline-block;
+    top: 4px;
+    float: right;
+    height: 1rem;
+}
+nav ul li .iconfont {
+    font-size:1.3rem;
+}
+.content {
+    width: 100%;
+}
+.news-lists {
+    margin: 1rem 1rem 0 1rem;
+    list-style: none;
+    padding:0;
+}
+.newstitle {
+    font-size: 2rem;
+    color: #333;
+    padding-bottom:5px;
+}
+.news-list {
+    display: flex;
+    border-bottom: 1px solid #f6f6f6;
+    padding: 8.5px 0 10px;
+}
+.news-lists img {
+        height: auto;
+    width: 100%;
+    vertical-align: middle;
+}
+.newstime {
+    color: #999;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.newssrc {
+    margin-left:5px;
+    color: #999;
+    font-size: 1rem;
+    font-weight: 400;
+    border: 1px solid #efb9b9;
+    color: #ef3f41;
+}
+.newsimg {
+    flex:1;
+}
+.newspq {
+    flex:2;
+    margin:auto 0;
+    padding: 0 0 0 1rem;
+    box-sizing: content-box;
+}

@@ -1,0 +1,866 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 312px;
+	height: 312px;
+	margin-left: -156px;
+	margin-top: -156px;
+}
+
+header h2 {
+	text-align: center;
+	margin-top: 50px;
+}
+/* 3D魔方 CSS start */
+.container1 {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-animation: change 6s linear infinite;
+	-moz-animation: change 6s linear infinite;
+	animation: change 6s linear infinite;
+	width: 312px;
+	height: 312px;
+}
+/* 动画 CSS start */
+@-webkit-keyframes change {
+	0% {
+		-webkit-transform: translateZ(-10em) rotateX(0deg) rotateY(0deg);
+	}
+
+	33% {
+		-webkit-transform: translateZ(-10em) rotateX(120deg) rotateY(240deg);
+	}
+
+	66% {
+		-webkit-transform: translateZ(-10em) rotateX(240deg) rotateY(480deg);
+	}
+
+	100% {
+		-webkit-transform: translateZ(-10em) rotateX(360deg) rotateY(720deg);
+	}
+}
+
+@-moz-keyframes change {
+	0% {
+		-moz-transform: translateZ(-10em) rotateX(0deg) rotateY(0deg);
+	}
+
+	33% {
+		-moz-transform: translateZ(-10em) rotateX(120deg) rotateY(240deg);
+	}
+
+	66% {
+		-moz-transform: translateZ(-10em) rotateX(240deg) rotateY(480deg);
+	}
+
+	100% {
+		-moz-transform: translateZ(-10em) rotateX(360deg) rotateY(720deg);
+	}
+}
+
+@keyframes change {
+	0% {
+		transform: translateZ(-10em) rotateX(0deg) rotateY(0deg);
+	}
+
+	33% {
+		transform: translateZ(-10em) rotateX(120deg) rotateY(240deg);
+	}
+
+	66% {
+		transform: translateZ(-10em) rotateX(240deg) rotateY(480deg);
+	}
+
+	100% {
+		transform: translateZ(-10em) rotateX(360deg) rotateY(720deg);
+	}
+}
+
+/* 动画 CSS end */
+/* 魔方正面 CSS start */
+.front-big {
+	position: absolute;
+	width: 312px;
+	height: 312px;
+	border: 10px solid yellow;
+	-webkit-transform: translateZ(100px);
+	-moz-transform: translateZ(100px);
+	transform: translateZ(100px);
+}
+
+.front-small1 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0;
+	top: 0;
+	background: #8A2BE2;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	margin: 1px 0 0 1px;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.front-small2 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 0;
+	background: #8A2BE2;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.front-small3 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 0;
+	background: #8A2BE2;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.front-small4 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0px;
+	top: 104px;
+	background: #8A2BE2;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.front-small5 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 104px;
+	background: #8A2BE2;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.front-small6 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 104px;
+	background: #8A2BE2;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.front-small7 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0px;
+	top: 208px;
+	background: #8A2BE2;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.front-small8 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 208px;
+	background: #8A2BE2;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.front-small9 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 208px;
+	background: #8A2BE2;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+/* 魔方正面 CSS  end */
+/* 魔方右面 CSS start */
+.right-big {
+	position: absolute;
+	left: 162px;
+	width: 312px;
+	height: 312px;
+	-webkit-transform: translateZ(-64px) rotateY(90deg);
+	-moz-transform: translateZ(-64px) rotateY(90deg);
+	transform: translateZ(-64px) rotateY(90deg);
+	border: 10px solid yellow;
+}
+
+.right-small1 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0;
+	top: 0;
+	background: blue;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	margin: 1px 0 0 1px;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.right-small2 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 0;
+	background: blue;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.right-small3 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 0;
+	background: blue;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.right-small4 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0px;
+	top: 104px;
+	background: blue;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.right-small5 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 104px;
+	background: blue;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.right-small6 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 104px;
+	background: blue;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.right-small7 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0px;
+	top: 208px;
+	background: blue;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.right-small8 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 208px;
+	background: blue;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.right-small9 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 208px;
+	background: blue;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+   /* 魔方右面 CSS start */
+    /* 魔方左面 CSS start */
+.left-big {
+	position: absolute;
+	right: 146px;
+	width: 312px;
+	height: 312px;
+	-webkit-transform: translateZ(-65px) rotateY(90deg);
+	-moz-transform: translateZ(-65px) rotateY(90deg);
+	transform: translateZ(-65px) rotateY(90deg);
+	border: 10px solid yellow;
+}
+
+.left-small1 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0;
+	top: 0;
+	background: sandybrown;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	margin: 1px 0 0 1px;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.left-small2 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 0;
+	background: sandybrown;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.left-small3 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 0;
+	background: sandybrown;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.left-small4 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0px;
+	top: 104px;
+	background: sandybrown;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.left-small5 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 104px;
+	background: sandybrown;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.left-small6 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 104px;
+	background: sandybrown;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.left-small7 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0px;
+	top: 208px;
+	background: sandybrown;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.left-small8 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 208px;
+	background: sandybrown;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.left-small9 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 208px;
+	background: sandybrown;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+ /* 魔方左面 CSS end */
+  /* 魔方顶部 CSS start */
+.top-big {
+	position: absolute;
+	top: -162px;
+	width: 312px;
+	height: 312px;
+	-webkit-transform: translateZ(-64px) rotateX(90deg);
+	-moz-transform: translateZ(-64px) rotateX(90deg);
+	transform: translateZ(-64px) rotateX(90deg);
+	border: 10px solid yellow;
+}
+
+.top-small1 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0;
+	top: 0;
+	background: azure;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	margin: 1px 0 0 1px;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.top-small2 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 0;
+	background: azure;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.top-small3 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 0;
+	background: azure;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.top-small4 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0px;
+	top: 104px;
+	background: azure;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.top-small5 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 104px;
+	background: azure;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.top-small6 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 104px;
+	background: azure;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.top-small7 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0px;
+	top: 208px;
+	background: azure;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.top-small8 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 208px;
+	background: azure;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.top-small9 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 208px;
+	background: azure;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+		 /* 魔方顶部 CSS end */
+		  /* 魔方底部 CSS start */
+.up-big {
+	position: absolute;
+	top: 162px;
+	width: 312px;
+	height: 312px;
+	-webkit-transform: translateZ(-64px) rotateX(-90deg);
+	-moz-transform: translateZ(-64px) rotateX(-90deg);
+	transform: translateZ(-64px) rotateX(-90deg);
+	border: 10px solid yellow;
+}
+
+.up-small1 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0;
+	top: 0;
+	background: #9c27b0;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	margin: 1px 0 0 1px;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.up-small2 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 0;
+	background: #9c27b0;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.up-small3 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 0;
+	background: #9c27b0;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.up-small4 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0px;
+	top: 104px;
+	background: #9c27b0;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.up-small5 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 104px;
+	background: #9c27b0;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.up-small6 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 104px;
+	background: #9c27b0;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.up-small7 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0px;
+	top: 208px;
+	background: #9c27b0;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.up-small8 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 208px;
+	background: #9c27b0;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.up-small9 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 208px;
+	background: #9c27b0;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+/* 魔方底部 CSS end */
+
+/* 魔方反面 CSS start */
+.reverse-big {
+	position: absolute;
+	width: 312px;
+	height: 312px;
+	-webkit-transform: translateZ(-232px);
+	-moz-transform: translateZ(-232px);
+	transform: translateZ(-232px);
+	border: 10px solid yellow;
+}
+
+.reverse-small1 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0;
+	top: 0;
+	background: #04EC99;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	margin: 1px 0 0 1px;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.reverse-small2 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 0;
+	background: #04EC99;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.reverse-small3 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 0;
+	background: #04EC99;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.reverse-small4 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0px;
+	top: 104px;
+	background: #04EC99;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.reverse-small5 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 104px;
+	background: #04EC99;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.reverse-small6 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 104px;
+	background: #04EC99;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.reverse-small7 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0px;
+	top: 208px;
+	background: #04EC99;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.reverse-small8 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 104px;
+	top: 208px;
+	background: #04EC99;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+
+.reverse-small9 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 208px;
+	top: 208px;
+	background: #04EC99;
+	border: 1px solid  #999;
+	border-radius: 10%;
+	font-size: 16px;
+	line-height: 100px;
+}
+/* 魔方反面 CSS end */
+/* 3D魔方 CSS end */

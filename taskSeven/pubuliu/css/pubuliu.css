@@ -1,0 +1,46 @@
+/* 初始化 css start */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 初始化 css end */
+
+/* 主体内容 css start */
+
+#container {
+    margin: 0 40px;
+}
+
+.box {
+    position: relative;
+    float: left;
+}
+
+.content {
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background: #fff;
+    display: inline;
+    float: left;
+    width: auto;
+    text-align: center;
+    font-family: "Marker Felt", sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    -o-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    margin: 10px;
+}
+
+img {
+    width: 160px;
+    height: auto;
+}
+
+/* 主体内容  css start */
+

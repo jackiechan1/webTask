@@ -1,0 +1,658 @@
+body {
+    font: 12px arial;
+    height: 100%;
+    position:relative;
+    min-height:600px;
+}
+html{
+    height:100%;
+}
+
+body, p, form, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input {
+    border: 0;
+    padding: 0;
+}
+
+.s_form {
+    position: relative;
+    top: 38.2%;
+    top:260px\9;
+}
+#container{
+    min-width: 810px;
+    height: 100%;
+    min-height: 600px;
+    position: relative;
+}
+
+/*html5*/
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{
+    display:block;
+}
+
+/* footer css start */
+header ul {
+    z-index: 2;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 19px 0 5px 0;
+    padding: 0 96px 0 0;
+}
+
+header ul .mnav {
+    float: left;
+    color: #333;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+header ul .lb {
+    display: inline-block;
+    float: left;
+    color: #333;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+header ul .py {
+    display: inline-block;
+    float: left;
+    color: #333;
+    line-height: 24px;
+    font-size: 13px;
+    margin-left: 20px;
+    overflow: hidden;
+    text-decoration: underline;
+}
+
+header ul .bry {
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+    display: block;
+}
+
+header ul .mnav:hover {
+    color: #00c;
+}
+
+/* footer css end */
+
+/* main css start */
+#main {
+    text-align: center;
+    position: relative;
+    top: -191px;
+}
+
+#form {
+    margin: 22px auto 0;
+    width: 648px;
+    text-align: left;
+    z-index: 100;
+    position: relative;
+}
+
+.input-box {   
+    background: #fff;
+    display: inline-block;
+    vertical-align: top;
+    width: 540px;
+    margin-right: 0;
+    overflow: hidden;
+    height: 36px;
+    position: absolute;
+}
+.input-box input:hover {
+    border-color: #999;
+}
+.input-box input:focus {
+    border:1px solid #3385FF;
+}
+.bdyx-text.btnhover {
+    background: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    box-shadow: 1px 1px 1px #ccc;
+    cursor:pointer;
+}
+
+.input-text {
+    width: 540px;
+    height: 34px;
+    font: 16px/18px arial;
+    background: transparent;
+    -webkit-appearance: none;
+    border: 1px solid #b6b6b6;
+    padding-left:8px;
+    line-height: 34px\9;
+    _margin-top:-1px;
+
+}
+
+.bdyx-box {
+    width: 97px;
+    height: 34px;
+    display: inline-block;
+    background-position: -120px -48px;
+    z-index: 0;
+    vertical-align: top;
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid transparent;
+    _border-bottom: 0px solid transparent;
+    position: absolute;
+    left: 540px;
+}
+
+.bdyx-text {
+    width: 100px;
+    height: 36px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border-bottom: 1px solid #2d78f4;
+    outline: medium;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    +border-bottom: 0px solid #2d78f4;
+
+}
+
+/* main css start */
+
+/* 设置的下拉框CSS样式 start */
+.bdpfmenu {
+    width: 70px;
+}
+
+.bdpfmenu {
+    font-size: 12px;
+    background-color: #fff;
+}
+
+.bdpfmenu {
+    display: none; 
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    position: absolute;
+    right: 73px;
+    width: 68px;
+    top: 48px;
+    margin-top: -1px;
+    _margin-top: -3px;
+    z-index: 2;
+    box-shadow: 1px 1px 5px #d1d1d1;
+    -webkit-box-shadow: 1px 1px 5px #d1d1d1;
+    -moz-box-shadow: 1px 1px 5px #d1d1d1;
+    -o-box-shadow: 1px 1px 5px #d1d1d1;
+}
+
+.bdnuarrow {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -5px;
+}
+
+.bdnuarrow em {
+    top: -1px;
+}
+
+.bdnuarrow i {
+    top: 0;
+}
+
+.bdnuarrow em, .bdnuarrow i {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+}
+
+.bdpfmenu a {
+    display: block;
+    text-align: left;
+    margin: 0!important;
+    padding: 0 9px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #333333;
+}
+
+.bdpfmenu a:hover {
+    background: #3385ff;
+    color: white;
+}
+
+/* 设置的下拉框CSS样式 end */
+
+
+/* 更多产品下拉框CSS样式 start */
+.bdbri {
+    width: 85px;
+    min-height: 100px;
+    border-left: 1px solid #e7e7e7;
+    position: absolute;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    z-index: 2;
+    right: 0;
+    top: 0;
+}
+
+.bdbriimgtitle {
+    color: #333;
+    text-align: center;
+    width: 66px;
+    height: 43px;
+    line-height: 43px;
+    padding-top: 9px;
+    margin: 0 auto;
+    border-bottom: #f0f0f0 1px solid;
+    font-size: 13px;
+    cursor: default;
+}
+
+.briscrollwrapperContainer {
+    position: relative;
+}
+
+.briscrollwrapper {
+    overflow: hidden;
+}
+
+.bdbriscroll-onwheel{
+    height:568px;
+}
+
+.bdbriimg{
+    opacity: 1; 
+    min-height: 600px; 
+    display: none;
+}
+
+.bdbri.bdbriimg .bdmainlink a {
+    display: block;
+    text-align: center;
+    width: 66px;
+    height: 76px;
+    margin: 0 auto;
+    border-bottom: #f0f0f0 1px solid;
+    color: #666;
+    text-decoration: underline;
+    overflow: hidden;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.bdbri.bdbriimg span.bdbriimgitem_3 {
+    width: 40px;
+    background-position: -72px 0;
+}
+
+.bdbri.bdbriimg span {
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(../img/bdbri_icons_2e35e84b.png) no-repeat;
+    cursor: pointer;
+}
+
+.bdbri.bdbriimg .bdbrievenmore {
+    margin-top: 15px;
+    height: 30px;
+    width: 85px;
+    overflow: hidden;
+}
+
+.bdbri.bdbriimg .bdbrievenmore {
+    clear: both;
+    text-align: center;
+}
+
+.bdbri.bdbriimg span.bdbriimgitem_4 {
+    background-position: -112px 0;
+}
+
+.bdbri.bdbriimg span.bdbriimgitem_2 {
+    background-position: -36px 0;
+}
+
+.bdbri.bdbriimg span.bdbriimgitem_5 {
+    background-position: -148px 0;
+}
+
+.bdbri.bdbriimg span.bdbriimgitem_6 {
+    background-position: -184px 0;
+}
+
+.bdbri.bdbriimg .bdmainlink a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+.bdbriscroll-ctrl-scroll {
+    height: 242px;
+    display: block;
+}
+/* 更多产品下拉框CSS样式  end */
+
+.soutu-btn {
+    z-index: 1;
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    margin-top: -8px;
+    height: 16px;
+    width: 18px;
+    background: #fff url(../img/camera_new_679c15cc.png) no-repeat;
+    _background: transparent;
+    cursor: pointer;
+}
+
+
+.soutu-btn:hover {
+    background-position: 0 -20px;
+}
+
+/* 照相机点击事件CSS start */
+.soutu-layer {
+    background-color: #fff;
+    position: absolute;
+    border: 1px solid #3385ff;
+    z-index: 101;
+    display:none;
+}
+
+.soutu-layer .soutu-url {
+    position: relative;
+    z-index: 2;
+}
+
+.soutu-layer .soutu-url-wrap {
+    background: transparent;
+}
+
+.soutu-layer .soutu-url-wrap {
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    display: inline-block;
+    width: 539px;
+    overflow: hidden;
+    height: 34px;
+    vertical-align: top;
+}
+
+.soutu-layer #soutu-url-kw {
+    width: 526px;
+    height: 22px;
+    font: 13px/18px '宋体';
+    color: #aaa;
+    line-height: 22px\9;
+    margin: 6px 0 0 7px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+}
+
+.soutu-layer .soutu-url-btn {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    background: #3385ff;
+    border: 0 none;
+    border-bottom: 1px solid #2d78f4;
+    cursor: pointer;
+    vertical-align: top;
+    margin: -1px -1px 0 0;
+}
+
+.soutu-layer .soutu-url-btn-icon {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 18px;
+    height: 16px;
+    background-image: url(../img/camera_layer_1f770dcc.png);
+}
+
+.soutu-icon {
+    display: inline-block;
+    background: url(../img/soutu_icons_sample_6a1e1619.png) no-repeat;
+}
+
+
+.soutu-layer .soutu-state-normal {
+    padding: 23px 20px 27px;
+}
+
+.soutu-layer .soutu-drop {
+    text-align: center;
+    height: 75px;
+    padding-top: 25px;
+    margin-bottom: 16px;
+    background-color: #fafafa;
+}
+
+.soutu-layer .soutu-drop-tip {
+    display: block;
+    font-size: 16px;
+    color: #999;
+}
+
+.soutu-layer .soutu-drop-icon {
+    margin-top: 6px;
+    width: 28px;
+    height: 28px;
+    background-position: -70px -2px;
+}
+
+.soutu-layer .upload-wrap {
+    position: relative;
+    width: 158px;
+    height: 43px;
+    font-size: 16px;
+    border: 1px solid #cacbcc;
+    line-height: 43px;
+    margin: 0 auto;
+    color: #333;
+    text-align: center;
+}
+
+.soutu-layer .upload-pic {
+    position: absolute;
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    margin-left: -18px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.soutu-layer .upload-icon {
+    position: relative;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    background-position: -144px 0;
+}
+
+.soutu-layer .upload-wrap {
+    position: relative;
+    width: 158px;
+    height: 43px;
+    font-size: 16px;
+    border: 1px solid #cacbcc;
+    line-height: 43px;
+    margin: 0 auto;
+    color: #333;
+    text-align: center;
+}
+
+.soutu-layer .soutu-close {
+    position: absolute;
+    right: 18px;
+    bottom: 13px;
+    z-index: 2;
+    background-position: -20px 0;
+    width: 18px;
+    height: 18px;
+}
+/* 照相机点击事件CSS end*/
+
+/* footer CSS start */
+
+#ftCon {
+    height: 100px;
+    position: absolute;
+    bottom: 23px;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 0;
+    overflow: hidden;
+    
+}
+
+.ftCon-Wrapper {
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    +width:660px;
+    _width:680px;
+}
+
+#qrcode {
+    display: inline-block;
+    +display:block;
+}
+
+#qrcode .qrcode-item {
+    float: left;
+}
+
+#qrcode .qrcode-item-1 .qrcode-img {
+    background: url(../img/zbios_a4b2d86f.png) 0 0 no-repeat;
+}
+
+#qrcode .qrcode-item-2 .qrcode-img {
+    background: url(../img/nuomi_510f7472.png) 0 0 no-repeat;
+}
+
+#qrcode .qrcode-img {
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+#qrcode .qrcode-text {
+    float: left;
+    color: #999;
+    line-height: 23px;
+    margin: 8px 0 0 10px;
+}
+
+#qrcode .qrcode-text p {
+    text-align: left;
+}
+
+#qrcode .qrcode-text b {
+    color: #666;
+    font-weight: bold;
+}
+
+#qrcode .qrcode-text span {
+    letter-spacing: 1px;
+}
+
+#qrcode .qrcode-item-2 {
+    margin-left: 33px;
+}
+
+#qrcode .qrcode-item {
+    float: left;
+}
+
+#ftConw, #ftConw a {
+    color: #999;
+}
+
+#ftConw {
+    display: inline-block;
+    text-align: left;
+    margin-left: 33px;
+    +margin-left:313px;
+    line-height: 22px;
+    position: relative;
+    top: -2px;
+}
+
+#lh #seth, #lh #setf {
+    margin-left: 0;
+}
+
+#lh a {
+    margin-left: 25px;
+}
+
+.jgwablogo {
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    overflow: hidden;
+    background: url(../img/icons_0e814c16.png) no-repeat;
+}
+
+.jgwablogo {
+    background-position: -600px -96px;
+    position: relative;
+    top: 3px;
+}
+
+/* footer CSS end */

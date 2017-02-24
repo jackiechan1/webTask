@@ -1,0 +1,955 @@
+<!doctype html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <title>
+      WEB前端工程师面试题
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>
+          WEB前端工程师面试题
+        </h1>
+        <b>
+          1 ,什么是闭包？闭包有什么好处？使用闭包要注意什么？
+        </b>
+        <br>
+        <br>
+        闭包：函数嵌套函数，内部函数可以引用外部函数的参数和变量，变量和参数不会被垃圾回收机制所回收
+        <br>
+        好处：1）希望一个变量长期驻扎在内存之中
+        <br>
+        &nbsp; &nbsp;&nbsp;&nbsp;2）避免全局变量的污染
+        <br>
+        &nbsp; &nbsp;&nbsp;&nbsp;3）私有成员的存在
+        <br>
+        注意：可能会造成内存泄漏
+        <br>
+        <b>
+          2，在js中通过typeof能弹出的数据类型有哪些
+        </b>
+        <br>
+        <br>
+        number，string，boolean，Object，undefined，function
+        <br>
+        <br>
+        <b>
+          3，arr.pop(），arr.push()有什么区别
+        </b>
+        <br>
+        <br>
+        &lt;script&gt;
+        <br>
+        var arr=[2,1,3,21,12];
+        <br>
+        arr.pop();//从数组最后面一个数字删除，返回被删除的数字=》12
+        <br>
+        arr.push(8)//从数组最后面添加一个数字，返回添加之后数组的长度=》5；
+        <br>
+        <br>
+        &lt;/script&gt;
+        <br>
+        <b>
+          4，以下代码弹出结果是什么？
+        </b>
+        <br>
+        <br>
+        &nbsp; &nbsp; alert(aSome);
+        <br>
+        &nbsp; &nbsp; function aSome(){
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;var aSome=3;
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;function bSome(){
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;var aSome=1;
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;alert(aSome);
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;}
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;bSome();
+        <br>
+        &nbsp; &nbsp; }
+        <br>
+        &nbsp; &nbsp; aSome();
+        <br>
+        <br>
+        结果：
+        <br>
+        1，弹出整个aSome函数体，因为函数预解析
+        <br>
+        2，弹出1
+        <br>
+        <br>
+        <b>
+          5，以下代码执行结果是多少？
+        </b>
+        <br>
+        <br>
+        &lt;script&gt;
+        <br>
+        &nbsp; &nbsp; var a='a1';
+        <br>
+        &nbsp; &nbsp; a++;
+        <br>
+        &nbsp; &nbsp; alert(a);
+        <br>
+        &lt;/script&gt;
+        <br>
+        结果为NaN，因为字符串++时进行隐示类型转化，字母++结果为NaN
+        <br>
+        <br>
+        <b>
+          6,以下代码的执行结果是多少？
+        </b>
+        <br>
+        <br>
+        var a='撒旦';
+        <br>
+        a=parseFloat(a);
+        <br>
+        alert(a==a);
+        <br>
+        结果为false，a进行转化以后为NaN，NaN和任何值都不相等，包括自己。
+        <br>
+        <br>
+        <b>
+          7,常见字符串方法，数组方法，数学方法.
+        </b>
+        <br>
+        <br>
+        //字符串方法
+        <br>
+        &nbsp; &nbsp; str.charAt()方法可返回指定位置的字符。
+        <br>
+        &nbsp; &nbsp; str.toLowerCase()方法用于把字符串转换为小写。
+        <br>
+        &nbsp; &nbsp; str.toUpperCase()方法用于把字符串转换为大写。
+        <br>
+        &nbsp; &nbsp; str.indexOf()方法可返回某个指定的字符串值在字符串中首次出现的位置。
+        <br>
+        &nbsp; &nbsp; str.laseIndexOf()方法可返回一个指定的字符串值最后出现的位置，在一个字符串中的指定位置从后向前搜索。
+        <br>
+        &nbsp; &nbsp; str.substring()方法用于提取字符串中介于两个指定下标之间的字符。
+        <br>
+        &nbsp; &nbsp; str.split()方法用于把一个字符串分割成字符串数组。
+        <br>
+        //数组方法
+        <br>
+        &nbsp; &nbsp; arr.push()方法可向数组的末尾添加一个或多个元素，并返回新的长度。
+        <br>
+        &nbsp; &nbsp; arr.unshift()方法可向数组的开头添加一个或更多元素，并返回新的长度。
+        <br>
+        &nbsp; &nbsp; arr.pop()方法用于删除并返回数组的最后一个元素。
+        <br>
+        &nbsp; &nbsp; arr.shift()方法用于把数组的第一个元素从其中删除，并返回第一个元素的值。
+        <br>
+        &nbsp; &nbsp; arr.join()方法用于把数组中的所有元素放入一个字符串。
+        <br>
+        &nbsp; &nbsp; arr.splice()方法向/从数组中添加/删除项目，然后返回被删除的项目。
+        <br>
+        &nbsp; &nbsp; arr.reverse()方法用于颠倒数组中元素的顺序。
+        <br>
+        &nbsp; &nbsp; arr.concat()方法用于连接两个或多个数组。
+        <br>
+        &nbsp; &nbsp; arr.sort()方法用于对数组的元素进行排序。
+        <br>
+        //数学方法
+        <br>
+        &nbsp; &nbsp; Math.random()方法可返回介于 0 ~ 1 之间的一个随机数。
+        <br>
+        &nbsp; &nbsp; Math.pow()方法返回 x 的 y 次幂。
+        <br>
+        &nbsp; &nbsp; Math.sqrt()方法可返回一个数的平方根。
+        <br>
+        &nbsp; &nbsp; Math.abs()方法可返回数的绝对值。
+        <br>
+        &nbsp; &nbsp; Math.floor()方法可对一个数进行下舍入。
+        <br>
+        &nbsp; &nbsp; Math.ceil()方法可对一个数进行上舍入。
+        <br>
+        &nbsp; &nbsp; Math.round()方法可把一个数字舍入为最接近的整数。
+        <br>
+        &nbsp; &nbsp; Math.max()方法可返回两个指定的数中带有较大的值的那个数。
+        <br>
+        &nbsp; &nbsp; Math.min()方法可返回两个指定的数中带有较小的值的那个数。
+        <br>
+        <br>
+        <b>
+          8,怎样判断浏览器类型是ie6？
+        </b>
+        <br>
+        <br>
+        if(window.navigator.userAgent.toLowerCase().indexOf('msie 6.0')!=-1){
+        <br>
+        &nbsp; &nbsp; alert('是ie6');
+        <br>
+        }
+        <br>
+        <b>
+          9，以下代码的执行结果是多少？
+        </b>
+        <br>
+        <br>
+        &lt;script&gt;
+        <br>
+        &nbsp; &nbsp; var a=b=0;
+        <br>
+        &nbsp; &nbsp; while(a&lt;=100){
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;b+=a;
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;a++;
+        <br>
+        &nbsp; &nbsp; }
+        <br>
+        &nbsp; &nbsp; alert(b);
+        <br>
+        &lt;/script&gt;
+        <br>
+        结果：5050
+        <br>
+        <b>
+          10,var str='abc12 34 43av 345 abd567 98 9';写一个程序找出其中的数字
+        </b>
+        <br>
+        <br>
+        alert(str.match(/\d+/g))
+        <br>
+        <b>
+          11，get和post的区别
+        </b>
+        <br>
+        <br>
+        1.Post传输数据时，不需要在URL中显示出来，而Get方法要在URL中显示。
+        <br>
+        2.Post传输的数据量大，可以达到2M，而Get方法由于受到URL长度的限制,只能传递大约1024字节.
+        <br>
+        3.Post顾名思义,就是为了将数据传送到服务器段,Get就是为了从服务器段取得数据.而Get之所以也能传送数据,只是用来设计告诉服务器,你到底需要什么样的数据.Post的信息作为http请求的内容，而Get是在Http头部传输的。
+        <br>
+        get 方法用Request.QueryString["strName"]接收
+        <br>
+        post 方法用Request.Form["strName"] 接收
+        <br>
+        注意：
+        <br>
+        虽然两种提交方式可以统一用Request("strName")来获取提交数据，但是这样对程序效率有影响，不推荐使用。
+        <br>
+        一般来说，尽量避免使用Get方式提交表单，因为有可能会导致安全问题
+        <br>
+        <b>
+          12，cookie，localStorage和sessionStorage有什么区别？
+        </b>
+        <br>
+        <br>
+        共同点：都是保存在浏览器端，且同源的。
+        <br>
+        <br>
+        区别：
+        <br>
+        1）cookie数据始终在同源的http请求中携带（即使不需要），即cookie在浏览器和服务器间来回传递。而sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。
+        <br>
+        2）cookie数据还有路径（path）的概念，可以限制cookie只属于某个路径下。
+        <br>
+        3）存储大小限制也不同，cookie数据不能超过4k，同时因为每次http请求都会携带cookie，所以cookie只适合保存很小的数据，如会话标识。sessionStorage和localStorage
+        虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。
+        <br>
+        4）数据有效期不同，sessionStorage：仅在当前浏览器窗口关闭前有效，自然也就不可能持久保持；localStorage：始终有效，窗口或浏览器关闭也一直保存，因此用作持久数据；cookie只在设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭。
+        <br>
+        5）作用域不同，sessionStorage不在不同的浏览器窗口中共享，即使是同一个页面；localStorage 在所有同源窗口中都是共享的；cookie也是在所有同源窗口中都是共享的。
+        <br>
+        <b>
+          13，以下代码的执行结果是多少？
+        </b>
+        <br>
+        <br>
+        &lt;script&gt;
+        <br>
+        &nbsp; &nbsp; alert(aSome);
+        <br>
+        &nbsp; &nbsp; function aSome(){
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;var aSome=3;
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;function bSome(){
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;var aSome=1;
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;alert(aSome);
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;}
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;bSome();
+        <br>
+        &nbsp; &nbsp; }
+        <br>
+        &nbsp; &nbsp; alert(aSome());
+        <br>
+        &lt;/script&gt;
+        <br>
+        结果：
+        <br>
+        1，整个函数体aSome
+        <br>
+        2，1
+        <br>
+        3，undefined 因为函数没有返回值
+        <br>
+        <b>
+          14，以下代码的执行结果是多少？
+        </b>
+        <br>
+        <br>
+        &lt;script&gt;
+        <br>
+        &nbsp; &nbsp; alert(aSome);
+        <br>
+        &nbsp; &nbsp; var aSome=function(){
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;var aSome=3;
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;function bSome(){
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;var aSome=1;
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;alert(aSome);
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;}
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;bSome();
+        <br>
+        &nbsp; &nbsp; }
+        <br>
+        &nbsp; &nbsp; aSome();
+        <br>
+        &lt;/script&gt;
+        <br>
+        结果：
+        <br>
+        1，undefined 变量预解析
+        <br>
+        2，1
+        <br>
+        <b>
+          15， 字符串转数字的方法有哪些，怎么进行转换的？
+        </b>
+        <br>
+        <br>
+        //转化成整数
+        <br>
+        parseInt('12')=&gt;12
+        <br>
+        parseInt('12abc')=&gt;12
+        <br>
+        parseInt('12.5abc')=&gt;12
+        <br>
+        //保留小数
+        <br>
+        parseFloat('12')=&gt;12
+        <br>
+        parseFloat('12abc')=&gt;12
+        <br>
+        parseFloat('12.5abc')=&gt;12.5
+        <br>
+        <br>
+        //转化纯数字
+        <br>
+        Number('12')=&gt;12
+        <br>
+        Number('12abc')=&gt;NaN
+        <br>
+        Number('12.5abc')=&gt;NaN
+        <br>
+        <b>
+          16，封装一个获取随机整数的函数
+        </b>
+        <br>
+        <br>
+        &lt;script&gt;
+        <br>
+        //n,m的随机数封装
+        <br>
+        function rnd(n,m){
+        <br>
+        &nbsp; &nbsp; return Math.floor(Math.random()*(m-n)+n);
+        <br>
+        }
+        <br>
+        &lt;/script&gt;
+        <br>
+        <b>
+          17.javascript是面向对象的，怎么体现javascript的继承关系？
+        </b>
+        <br>
+        <br>
+        1.属性
+        <br>
+        &nbsp; &nbsp; 父级构造函数.apply(this,arguments);
+        <br>
+        2.方法
+        <br>
+        &nbsp; &nbsp; 子级构造函数.prototype=new 父级构造();
+        <br>
+        &nbsp; &nbsp; 子级构造函数.prototype.constructor=子级构造;
+        <br>
+        <b>
+          18，怎样创建，添加（2种）和删除元素
+        </b>
+        <br>
+        <br>
+        //创建元素ele表示创建元素的标签名
+        <br>
+        document.createElement(ele);
+        <br>
+        //添加
+        <br>
+        //从后面添加
+        <br>
+        oParent.appendChild(要添加的元素)
+        <br>
+        //从前面添加
+        <br>
+        oParent.insertBefore(要添加的元素，添加到谁的前面)；
+        <br>
+        //要删除的元素
+        <br>
+        oParent.removeChild(要删除的元素)
+        <br>
+        <b>
+          19，设置属性的方法有哪些？
+        </b>
+        <br>
+        <br>
+        1）"." 操作已存在的属性
+        <br>
+        2）"[]"可以接收变量，"."能操作的，"[]"都可以操作
+        <br>
+        3）setAttribute(name,value)设置自定义属性
+        <br>
+        <b>
+          20.列举for/for in 二种循环方法的区别和优缺点。
+        </b>
+        <br>
+        <br>
+        for
+        <br>
+        for(初始化; 条件; 自增){
+        <br>
+        &nbsp; &nbsp; 语句
+        <br>
+        }
+        <br>
+        快
+        <br>
+        不能遍历对象的属性
+        <br>
+        for in
+        <br>
+        &nbsp; &nbsp; for(初始化 in object){
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;语句
+        <br>
+        }
+        <br>
+        慢
+        <br>
+        可以遍历对象的属性
+        <br>
+        <b>
+          21,描述typeof与instanceof，constructor的区别是什么？
+        </b>
+        <br>
+        <br>
+        typeof
+        <br>
+        &nbsp; &nbsp; 检测基本数据类型
+        <br>
+        Instanceof
+        <br>
+        &nbsp; &nbsp; 检测复合类型
+        <br>
+        constructor
+        <br>
+        &nbsp; &nbsp; 检测构造函数
+        <br>
+        <b>
+          22，javascript中出现undefined的情况有哪些？
+        </b>
+        <br>
+        <br>
+        1，函数没有返回值，或者返回值为空，出现undefined
+        <br>
+        2，变量定义了未赋值；
+        <br>
+        3，引用没有提供实参函数形参的值，出现undefined
+        <br>
+        4，查询一个对象属性或者数组元素的值不存在，出现undefined
+        <br>
+        可参考：http://www.jianshu.com/p/b0700cce78c8
+        <br>
+        <b>
+          23，“=”，“==”，“===”有什么区别？
+        </b>
+        <br>
+        <br>
+        "="表示赋值 例如a=1;相当于把1赋值给a
+        <br>
+        "=="表示比较，会做类型转化，然后再进行比较
+        <br>
+        "==="表示严格比较，不会做类型转化
+        <br>
+        注：关于具体区别，后续文章会继续跟进
+        <br>
+        <b>
+          24，数组和字符串如何进行相互转换？
+        </b>
+        <br>
+        <br>
+        arr.join()将数组转化成字符串
+        <br>
+        str.split()将字符串转化成数组
+        <br>
+        <b>
+          25，你知道的排序方法有哪些？
+        </b>
+        <br>
+        <br>
+        归并排序，快排，冒泡排序，选择排序
+        <br>
+        <b>
+          26,以下代码alert的结果是什么？
+        </b>
+        <br>
+        <br>
+        alert（1&amp;&amp;2）;
+        <br>
+        结果为2
+        <br>
+        <b>
+          27，call和apply的作用什么，区别是什么？
+        </b>
+        <br>
+        <br>
+        Object.call(this,obj1,obj2,obj3)
+        <br>
+        Object.apply(this,arguments)
+        <br>
+        <br>
+        相同点:两个方法产生的作用是完全一样的
+        <br>
+        <br>
+        不同点:方法传递的参数不同
+        <br>
+        <br>
+        foo.call(this, arg1,arg2,arg3) == foo.apply(this, arguments)==this.foo(arg1,
+        arg2, arg3)
+        <br>
+        <br>
+        在JavaScript中,代码总是有一个上下文对象,代码处理该对象之内. 上下文对象是通过this变量来体现的, 这个this变量永远指向当前代码所处的对象中。
+        <br>
+        <br>
+        一、方法的定义
+        <br>
+        call方法:
+        <br>
+        语法：call(thisObj，Object)
+        <br>
+        定义：调用一个对象的一个方法，以另一个对象替换当前对象。
+        <br>
+        说明：
+        <br>
+        call 方法可以用来代替另一个对象调用一个方法。call 方法可将一个函数的对象上下文从初始的上下文改变为由 thisObj 指定的新对象。
+        <br>
+        如果没有提供 thisObj 参数，那么 Global 对象被用作 thisObj。
+        <br>
+        <br>
+        apply方法：
+        <br>
+        语法：apply(thisObj，[argArray])
+        <br>
+        定义：应用某一对象的一个方法，用另一个对象替换当前对象。
+        <br>
+        说明：
+        <br>
+        如果 argArray 不是一个有效的数组或者不是 arguments 对象，那么将导致一个 TypeError。
+        <br>
+        如果没有提供 argArray 和 thisObj 任何一个参数，那么 Global 对象将被用作 thisObj， 并且无法被传递任何参数。
+        <br>
+        <b>
+          28，什么是事件委托？
+        </b>
+        <br>
+        <br>
+        利用事件冒泡原理，将子级的事件加给父级，使用事件委托，可节省性能，也可以给js动态创建的元素加事件
+        <br>
+        <b>
+          29，解释一下jsonp的原理，为什么不是真正的ajax？
+        </b>
+        <br>
+        <br>
+        动态创建script标签，回调函数
+        <br>
+        Ajax是页面无刷新请求数据操作
+        <br>
+        <b>
+          30，以下代码的执行结果是多少？
+        </b>
+        <br>
+        <br>
+        var User = {
+        <br>
+        count: 1,
+        <br>
+        <br>
+        getCount: function() {
+        <br>
+        &nbsp;&nbsp;return this.count;
+        <br>
+        }
+        <br>
+        };
+        <br>
+        <br>
+        console.log(User.getCount()); // what?
+        <br>
+        <br>
+        var func = User.getCount;
+        <br>
+        console.log(func()); // what?
+        <br>
+        结果为
+        <br>
+        1,1
+        <br>
+        2，undefined
+        <br>
+        <b>
+          31,回答以下代码，alert的值分别是多少
+        </b>
+        <br>
+        <br>
+        &lt;script&gt;
+        <br>
+        var a = 100;
+        <br>
+        function test(){
+        <br>
+        &nbsp; &nbsp; alert(a);
+        <br>
+        &nbsp; &nbsp; a = 10;&nbsp;&nbsp;
+        <br>
+        &nbsp; &nbsp; alert(a);
+        <br>
+        }
+        <br>
+        &nbsp;&nbsp;test();
+        <br>
+        alert(a);
+        <br>
+        &lt;/script&gt;
+        <br>
+        结果为
+        <br>
+        1，100
+        <br>
+        2，10
+        <br>
+        3，10
+        <br>
+        <b>
+          32，new操作符具体干了什么呢?
+        </b>
+        <br>
+        <br>
+        1、创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。
+        <br>
+        2、属性和方法被加入到 this 引用的对象中。
+        <br>
+        3、新创建的对象由 this 所引用，并且最后隐式的返回 this 。
+        <br>
+        <b>
+          33，ajax原理是什么？
+        </b>
+        <br>
+        <br>
+        (1)创建对象
+        <br>
+        var xhr = new XMLHttpRequest();
+        <br>
+        (2)打开请求
+        <br>
+        xhr.open('GET', 'example.txt', true);
+        <br>
+        <br>
+        (3)发送请求
+        <br>
+        xhr.send(); 发送请求到服务器
+        <br>
+        <br>
+        (4)接收响应
+        <br>
+        xhr.onreadystatechange =function(){}
+        <br>
+        (1)当readystate值从一个值变为另一个值时，都会触发readystatechange事件。
+        <br>
+        (2)当readystate==4时，表示已经接收到全部响应数据。
+        <br>
+        (3)当status ==200时，表示服务器成功返回页面和数据。
+        <br>
+        (4)如果(2)和(3)内容同时满足，则可以通过xhr.responseText，获得服务器返回的内容。
+        <br>
+        <b>
+          34，程序中怎样捕获异常？
+        </b>
+        <br>
+        <br>
+        try{}catch(e){}
+        <br>
+        <b>
+          35，以下代码的执行结果是多少？
+        </b>
+        <br>
+        <br>
+        var uname = 'jack'
+        <br>
+        function change() {
+        <br>
+        &nbsp; &nbsp; alert(uname) // ?
+        <br>
+        &nbsp; &nbsp; var uname = 'lily'
+        <br>
+        &nbsp; &nbsp; alert(uname)&nbsp;&nbsp;//?
+        <br>
+        }
+        <br>
+        change()
+        <br>
+        结果：
+        <br>
+        1,undefined
+        <br>
+        2,lily
+        <br>
+        <b>
+          36,怎样获取浏览器的滚动距离？
+        </b>
+        <br>
+        <br>
+        scrollTop=document.documentElement.scrollTop||document.body.scrollTop
+        <br>
+        <b>
+          37，offsetWidth offsetHeight和clientWidth clientHeight的区别
+        </b>
+        <br>
+        <br>
+        (1)offsetWidth （content宽度+padding宽度+border宽度）
+        <br>
+        (2)offsetHeight（content高度+padding高度+border高度）
+        <br>
+        (3)clientWidth（content宽度+padding宽度）
+        <br>
+        (4)clientHeight（content高度+padding高度）
+        <br>
+        <b>
+          38，获取本月一共有多少天，怎么获取？
+        </b>
+        <br>
+        <br>
+        &lt;script&gt;
+        <br>
+        var oDate=new Date();
+        <br>
+        oDate.setMonth(oDate.getMonth()+1);
+        <br>
+        oDate.setDate(0);
+        <br>
+        alert(oDate.getDate());
+        <br>
+        &lt;/script&gt;
+        <br>
+        <b>
+          39，什么叫引用？
+        </b>
+        <br>
+        <br>
+        把一个对象，赋值给新的对象，这个新的对象添加的属性，之前的对象也具备
+        <br>
+        <b>
+          40，什么是事件对象？
+        </b>
+        <br>
+        <br>
+        事件对象描述了事件更加详细的信息
+        <br>
+        <b>
+          41，window.onload和domReady有什么区别？
+        </b>
+        <br>
+        <br>
+        window.onload是需要html，css,img等页面加载完毕才开始加载js
+        <br>
+        domReady只需要dom树加载完毕就可以加载js
+        <br>
+        <b>
+          42，列举css清除浮动的方法
+        </b>
+        <br>
+        <br>
+        1,为浮动元素父级加overflow：hidden
+        <br>
+        2，在浮动元素下面加&lt;br style="clear:both"/&gt;
+        <br>
+        3,为浮动元素父级加height
+        <br>
+        4，为浮动元素父级加.clearfix
+        <br>
+        .clearfix:after{display:block; content:'';clear：both;}
+        <br>
+        .clearfix{zoom:1;}
+        <br>
+        <b>
+          43，如何让一个元素垂直水平居中？
+        </b>
+        <br>
+        <br>
+        &lt;style&gt;
+        <br>
+        &nbsp; &nbsp; div{width: 200px; height: 200px; background: red; position:
+        absolute;left:50%; top:50%; margin-left:-100px; margin-top:-100px;}
+        <br>
+        &lt;/style&gt;
+        <br>
+        <b>
+          44，你知道的css选择器有哪些？
+        </b>
+        <br>
+        <br>
+        id选择器（ # myid）
+        <br>
+        类选择器（.myclassname）
+        <br>
+        标签选择器（div, h1, p）
+        <br>
+        相邻选择器（h1 + p）
+        <br>
+        子选择器（ul &gt; li）
+        <br>
+        后代选择器（li a）
+        <br>
+        通配符选择器（ * ）
+        <br>
+        属性选择器（a[rel = “external”]）
+        <br>
+        伪类选择器（a: hover, li: nth – child）
+        <br>
+        <b>
+          45，介绍一下css盒子模型？
+        </b>
+        <br>
+        <br>
+        有两种， IE 盒子模型、标准 W3C 盒子模型；
+        <br>
+        IE的content部分包含了 border 和 pading;
+        <br>
+        w3c盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border).
+        <br>
+        影响盒子模型大小的包括content+padding+border
+        <br>
+        <b>
+          46，谈谈This对象的理解。
+        </b>
+        <br>
+        <br>
+        this是js的一个关键字，随着函数使用场合不同，this的值会发生变化。
+        <br>
+        但是有一个总原则，那就是this指的是调用函数的那个对象。
+        <br>
+        this一般情况下：是全局对象Global。 作为方法调用，那么this就是指这个对象
+        <br>
+        <b>
+          47，以下代码的执行结果是
+        </b>
+        <br>
+        <br>
+        &lt;script&gt;
+        <br>
+        &nbsp; &nbsp; function fn() {
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;this.a = 0;
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;this.b = function() {
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;alert(this.a)
+        <br>
+        &nbsp; &nbsp; }
+        <br>
+        &nbsp; &nbsp; }
+        <br>
+        &nbsp; &nbsp; fn.prototype = {
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;b: function() {
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;this.a = 20;
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;alert(this.a);
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;},
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;c: function() {
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;this.a = 30;
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;alert(this.a);
+        <br>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;}
+        <br>
+        &nbsp; &nbsp; }
+        <br>
+        &nbsp; &nbsp; var myfn = new fn();
+        <br>
+        &nbsp; &nbsp; myfn.b();
+        <br>
+        &nbsp; &nbsp; myfn.c();
+        <br>
+        &lt;/script&gt;
+        <br>
+        结果
+        <br>
+        1，0
+        <br>
+        2，30
+        <br>
+        <b>
+          48,css3中transform可以设置哪些样式？
+        </b>
+        <br>
+        <br>
+        transform:rotate(9deg) scale(0.85,0.90) translate(0px,-30px) skew(-9deg,0deg);//旋转,缩放,定位,倾斜
+        <br>
+        <b>
+          49，简述对‘use strict’怎么理解？
+        </b>
+        <br>
+        <br>
+        目的：
+        <br>
+        - 消除Javascript语法的一些不合理、不严谨之处，减少一些怪异行为;
+        <br>
+        - 消除代码运行的一些不安全之处，保证代码运行的安全；
+        <br>
+        - 提高编译器效率，增加运行速度；
+        <br>
+        - 为未来新版本的Javascript做好铺垫。
+        <br>
+      </div>
+    </div>
+  </body>
+
+</html>

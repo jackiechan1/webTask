@@ -1,0 +1,64 @@
+body,html{
+   margin:0;
+   padding:0;
+   border:0;
+ }
+.vhc{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:312px;
+	height:312px;
+	margin-left:-156px;
+	margin-top:-156px;
+	
+	
+}
+div:not(.vhc){
+   height:100px;
+   width:100px;
+}
+.up{
+	background-color:rgba(0,0,0,.5);
+	margin:0 auto;
+	box-shadow:2px 2px 10px 2px #06c;
+
+	
+}
+.aleft{
+    background-color:rgba(0,0,0,.5);
+    float:left;
+    box-shadow:0 0 10px #06c;
+    margin-right:2px;
+    margin-top:4px;
+
+    
+    
+}
+.center {
+	background:#35B558;
+	background-image:url('../img/music_24px_1171935_easyicon.net.ico');
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-size:50px 50px;
+	float:left;
+	box-shadow:4px 4px 4px #35B558;
+	margin:4px;
+	
+}
+.right{
+	background-color:rgba(0,0,0,.5);
+	float:left;
+	 box-shadow:0 0 10px 10px #06c;
+	margin-left:2px;
+	margin-top:4px;
+
+
+}
+.down{
+    background-color:rgba(0,0,0,.5); 
+    clear:both;
+    margin:0 auto;
+    box-shadow:  5px 5px 10px #06c inset;
+
+}

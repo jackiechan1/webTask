@@ -1,0 +1,354 @@
+#container {
+	width: 600px;
+	margin: 100px auto;
+	position: relative;
+}
+
+/* 头部 CSS start */
+.head {
+	width: 250px;
+	height: 200px;
+	background: transparent;
+	background: #000000;
+	border-top-left-radius: 286% 369%;
+	border-top-right-radius: 288% 369%;
+	border-bottom-right-radius: 300% 210%;
+	border-bottom-left-radius: 300% 210%;
+	position: relative;
+	z-index: 10;
+}
+
+/* 眼睛 CSS start */
+.lefteye {
+	width: 44px;
+	height: 64px;
+	background: white;
+	border-radius: 50%;
+	position: absolute;
+	left: 70px;
+	top: 60px;
+}
+
+.lefteyeball {
+	width: 19px;
+	height: 27px;
+	background: #000000;
+	border-radius: 50%;
+	position: absolute;
+	left: 21px;
+	top: 18px;
+}
+
+.leftyb {
+	width: 6px;
+	height: 8px;
+	background: white;
+	border-radius: 50%;
+	position: absolute;
+	left: 30px;
+	top: 26px;
+}
+.righteye {
+	width: 44px;
+	height: 64px;
+	background: white;
+	border-radius: 50%;
+	position: absolute;
+	right: 70px;
+	top: 60px;
+}
+
+.righteyebrow {
+	width: 7px;
+	height: 9px;
+	border: 6px solid;
+	border-color: black transparent transparent;
+	position: absolute;
+	right: 17px;
+	top: 19px;
+	border-top-left-radius: 106% 175%;
+	border-top-right-radius: 104% 175%;
+	box-shadow: 0px -2px 0px 0px #747474;
+	background-color: black;
+}
+
+.yuanxing {
+	width: 12px;
+	height: 34px;
+	position: absolute;
+	right: 20px;
+	top: 24px;
+	border-radius: 50%;
+	background: white;
+}
+
+/* 眼睛 CSS end */	
+/* 嘴巴 CSS start */
+.mouth {
+	background: #FFA600;
+	width: 155px;
+	height: 50px;
+	position: absolute;
+	left: 51px;
+	top: 130px;
+	border-radius: 50%;
+}
+
+.mouth_bar {
+	width: 124px;
+	height: 61px;
+	position: absolute;
+	left: 67px;
+	border: solid;
+	border-bottom-width: 11px;
+	border-color: #000000;
+	top: 115px;
+	border-top-width: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom-left-radius: 50% 43%;
+	border-bottom-right-radius: 50% 43%;
+}
+/* 嘴巴 CSS end */
+/* 头部 CSS end */
+
+/* 身体 CSS start */
+.tummy {
+	width: 300px;
+	height: 269px;
+	background: #000;
+	position: absolute;
+	left: -24px;
+	top: 119px;
+	border-radius: 50%;
+	z-index: 6;
+}
+
+.belly {
+	width: 260px;
+	height: 260px;
+	background: white;
+	position: absolute;
+	left: 20px;
+	top: 2px;
+	border-radius: 50%;
+}
+/* 围脖 CSS start */	
+.scarf {
+	width: 270px;
+	height: 133px;
+	background: #FB0009;
+	position: absolute;
+	left: 9px;
+	top: -16px;
+	border-radius: 50%;
+	border: 5px solid #000000;
+	z-index: 8;
+}
+
+.leftline {
+	width: 86px;
+	height: 79px;
+	background: transparent;
+	position: absolute;
+	left: 5px;
+	top: 14px;
+	border-radius: 50%;
+	border: solid #000000;
+	border-bottom-width: 0;
+	border-left-width: 7px;
+	border-right-width: 0;
+	border-top-width: 0;
+}
+
+.rightline {
+	width: 144px;
+	height: 102px;
+	background: transparent;
+	position: absolute;
+	right: 11px;
+	top: -3px;
+	border-radius: 50%;
+	border: solid #000000;
+	border-bottom-width: 0;
+	border-left-width: 0;
+	border-right-width: 6px;
+	border-top-width: 0;
+}
+
+.pocket {
+	width: 66px;
+	height: 75px;
+	background: #FB0009;
+	position: absolute;
+	left: 58px;
+	top: 106px;
+	border-top-left-radius: 30% 80%;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 30%;
+	border: 5px solid #000000;
+	z-index: 7;
+}
+
+.pocketline {
+	width: 66px;
+	height: 75px;
+	background: transparent;
+	position: absolute;
+	left: 44px;
+	top: -21px;
+	border-top-left-radius: 5% 82%;
+	border-bottom-left-radius: 38% 68%;
+	border: solid #000000;
+	border-left-width: 7px;
+	border-bottom-width: 0;
+	border-top-width: 0;
+	border-right-width: 0;
+	z-index: 7;
+	transform: rotate(14deg);
+}
+/* 围脖 CSS end */	
+/* 手部 CSS start */
+.lefthand {
+	background: #000000;
+	width: 160px;
+	height: 61px;
+	position: absolute;
+	left: -113px;
+	top: 225px;
+	border-radius: 50%;
+	-webkit-transform: rotateZ(-70deg);
+	-moz-transform: rotateZ(-70deg);
+	-ms-transform: rotateZ(-70deg);
+	-o-transform: rotateZ(-70deg);
+	transform: rotateZ(-70deg);
+	-webkit-animation: animations 0.5s infinite;
+	-moz-animation: animations 0.5s infinite;
+	-ms-animation: animations 0.5s infinite;
+	-o-animation: animations 0.5s infinite;
+	animation: animations 0.5s infinite;
+	-webkit-animation-direction: alternate;
+	-moz-animation-direction: alternate;
+	-ms-animation-direction: alternate;
+	-o-animation-direction: alternate;
+	animation-direction: alternate;
+}
+
+@-webkit-keyframes animations {
+	100% {
+		-webkit-transform: translate(-10px,-40px);
+	}
+}
+
+@keyframes animations {
+	100% {
+		transform: translate(-10px,-40px);
+	}
+}
+
+@-moz-keyframes animations {
+	100% {
+		-moz-transform: translate(-10px,-40px);
+	}
+}
+
+.righthand {
+	background: #000000;
+	width: 160px;
+	height: 61px;
+	position: absolute;
+	right: 234px;
+	top: 225px;
+	border-radius: 50%;
+	-webkit-transform: rotateZ(70deg);
+	-moz-transform: rotateZ(70deg);
+	-ms-transform: rotateZ(70deg);
+	-o-transform: rotateZ(70deg);
+	transform: rotateZ(70deg);
+	-webkit-animation: animations2 0.5s infinite;
+	-moz-animation: animations2 0.5s infinite;
+	-ms-animation: animations2 0.5s infinite;
+	-o-animation: animations2 0.5s infinite;
+	animation: animations2 0.5s infinite;
+	-webkit-animation-direction: alternate;
+	-moz-animation-direction: alternate;
+	-ms-animation-direction: alternate;
+	-o-animation-direction: alternate;
+	animation-direction: alternate;
+}
+
+@-webkit-keyframes animations2 {
+	100% {
+		-webkit-transform: translate(10px,-40px);
+	}
+}
+
+@keyframes animations2 {
+	100% {
+		transform: translate(10px,-40px);
+	}
+}
+
+@-moz-keyframes animations2 {
+	100% {
+		-moz-transform: translate(10px,-40px);
+	}
+}
+/* 手部 CSS start */	  
+/* 身体 CSS end */
+
+/* 足部 CSS start */
+.footer {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.leftfoot {
+	background: #FFA600;
+	width: 140px;
+	height: 68px;
+	position: absolute;
+	left: -26px;
+	top: 134px;
+	border-radius: 50%;
+	border: 5px solid #000000;
+	box-shadow: 10px  20px 20px #ccc;
+}
+
+.rightfoot {
+	background: #FFA600;
+	width: 140px;
+	height: 68px;
+	position: absolute;
+	right: 314px;
+	top: 134px;
+	border-radius: 50%;
+	border: 5px solid #000000;
+	box-shadow: -10px 20px 20px #ccc;
+}
+
+.lefttoe {
+	width: 25px;
+	height: 35px;
+	background: transparent;
+	border-left: 5px solid #000000;
+	border-top-left-radius: 70%;
+	position: absolute;
+	left: 4px;
+	top: 20px;
+	transform: rotate(52deg);
+}
+
+.righttoe {
+	width: 18px;
+	height: 35px;
+	background: transparent;
+	border-right: 5px solid #000000;
+	border-top-right-radius: 70%;
+	position: absolute;
+	right: 6px;
+	top: 14px;
+	transform: rotate(-66deg);
+}
+/* 足部 CSS end */

@@ -1,0 +1,137 @@
+ 
+/* 标准盒模型 CSS start*/
+.xiezi {
+    width: 100px;
+    height: 100px;
+    background:red;
+    text-align:center;
+    line-height:100px;
+    overflow:hidden;
+}
+.xiehe {
+    width:100px;
+    height:100px;
+    margin:50px auto;
+    background:black;
+    padding:10px;
+    border:5px solid blue;
+    box-shadow:2px 2px 2px 2px green;
+}
+/* 标准盒模型 CSS end*/
+
+/* 怪异盒模型 CSS start*/
+.xiezi2 {
+    width: 100px;
+    height: 100px;
+    background:red;
+    text-align:center;
+    line-height:100px;
+    overflow:hidden;
+}
+.xiehe2 {
+    width:120px;
+    height:120px;
+    margin:50px auto;
+    background:black;
+    padding:10px;
+    border:5px solid blue;
+    box-shadow:2px 2px 2px 2px green;
+    box-sizing:border-box;
+}
+/* 怪异盒模型 CSS end*/
+
+/* 分栏 CSS start*/
+.subfield img {
+    width:180px;
+    height:100px;
+    padding:5px 32px 0;
+}
+.subfield p{
+    text-indent:2em;
+    letter-spacing:2px;
+    text-align:justify;
+} 
+h2 {
+    margin:10px 0 10px 50px;
+}
+.subfield {
+    margin:50px;
+    border:6px solid #000;
+    -webkit-columns:5;
+    -webkit-column-rule-style:dashed;
+    column-rule-style:dashed;
+    -webkit-column-gap:40px;
+}
+/* 分栏 CSS end*/
+
+/* flex-列-排序 CSS start*/
+#container {
+    width:1200px;
+    height:200px;
+    display:-webkit-flex;
+    margin:50px auto;
+    padding:0;
+    border-radius:5px;
+    flex-direction:row;
+}
+.one {
+    -webkit-order:2;
+    -webkit-flex:1;
+    background:red;
+}
+.two {
+    -webkit-order:4;
+    background:blue;
+    -webkit-flex:1;
+}
+.three {
+    -webkit-order:1;
+    background:green;
+    -webkit-flex:1;
+}
+.four {
+    -webkit-order:3;
+    background:yellow;
+    -webkit-flex:1;
+}
+/* flex-列-排序 CSS end*/
+
+/* flex-行 CSS start*/
+#container1 {
+    width:1200px;
+    height:400px;
+    display:-webkit-flex;
+    margin:50px auto;
+    padding:0;
+    border-radius:5px;
+    flex-direction:column;
+}
+.one1 {
+    -webkit-flex:1;
+    background:red;
+}
+.two1 {
+    background:blue;
+    -webkit-flex:1;
+}
+.three1 {
+    background:green;
+    -webkit-flex:1;
+}
+.four1 {
+    background:yellow;
+    -webkit-flex:1;
+}
+/* flex-行 CSS end*/
+
+/* box-垂直居中 CSS start*/
+.box-flex {
+    background-color:#90FF90;
+    width:800px;
+    height:600px;
+    margin:50px auto;
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+}
+/* box-垂直居中 CSS end*/

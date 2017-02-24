@@ -1,0 +1,394 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>
+          前端面试题
+</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<style type="text/css">
+    .special {
+        text-indent:2em;
+    }
+    h3 {
+       color:#FF0000;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="page-header">
+        <h1>前端工程师入门试题-HTML/CSS部分</h1>
+    </div>
+    <h3>1、什么是H5？</h3>
+    <p>
+        H5=HTML5，指的是HTML超文本标记语言（HTML）的第五次重大修改，HTML的第五代。
+    </p>
+    <p>
+        HTML5具有的特点：
+    </p>
+    <p class="special">
+        （1）、语义化的标签：好处是网站加载更快；该标签举例：header、nav、article等。
+    </p>
+    <p class="special">
+        （2）、增加了音频、视频标签：好处是取代falsh；该标签举例：audio、video。
+    </p>
+    <p class="special">
+        （3）、canvas标签：好处在浏览器上绘制图形或动画，取代flash。
+    </p>
+    <p class="special">
+         （4）、支持手机和平板的响应式布局。
+    </p>
+    <strong> HTML5的缺点：低版本浏览器支持性不好，比如IE9以下的浏览器不支持HTML5。</strong>
+    <hr>
+    <h3>2、H5为什么这么火？H5是哪一年产生的？H5会火多久？</h3>
+    <p>
+        （1）、因为H5的后台很硬，是谷歌（google）和苹果（Apple）两大巨头公司，谷歌和苹果大力倡导H5的发展，也是H5的忠实的支持者和实践者（IOS+Android系统占据手机市场92.36%），H5的产生主要目的也是干掉flash，因为flash是adobe公司的，adobe不是W3C组织的成员之一，苹果和谷歌等万维网联盟也不希望在自己的产品中使用加载量过大的flash。
+    </p>
+    <p>
+        （2）、H5是2014年9月份W3C（万维网联盟，主要有苹果和谷歌公司）组织发布的。
+    </p>
+    <p>
+        （3）、刷脸时代（这里专指网站用户体验更加美观的时代）+移动端时代（手机+平板），会促使H5会在未来的有更加美好的发展前景，只要有网站，H5就会很火，UI也就很火，H5的发展会让UI更加提高用户的满意度，H5的火爆时代，会促进UI更好发展。
+    </p>
+    <p>
+          (4)、微信的发展，O2O的促使H5更火。
+        在这里不得不谈微信，如果没有微信，或许今天我们不会这样来讨论H5，微信无意中养成了用户扫码的习惯，并通过公众号的内容生产及分发，以及微信本身已有的庞大的用户群体及社交属性，使基于网页的内容可以快速传播，真正带来了APP即浏览器的时代，取消了输入内容网址的麻烦。以微信为代表的超级社交APP，解决了网页内容浏览及分发的通路。
+        H5或许会没落，但会迎来H6、H7...，只会变得越来越好，所以没必要担心H5会不会死，当下重在实践与积累，至少现在，Html5的影响力，会超出你我的想象，也就意味着H5的好闺蜜UI会一直火下去。
+    </p>
+    <hr>
+    <h3>3、什么叫做响应式？</h3>
+    <p>
+        针对不用的屏幕显示不同的网页布局，比如说大屏幕手机、小屏幕手机、平板能够适应不同的屏幕来显示网站。
+    </p>
+    <hr>
+    <h3>4、html是什么？css是什么？js是什么？</h3>
+    <p>
+        （1）、html是超文本标记语言，他是做网站时候用的一些文本标记标签，比如div、span等
+    </p>
+    <p>
+        （2）、 css是层叠样式表，是做网站的时候给标签来美化网站的样式，比如说background（背景）、color（字体颜色）、height（高度）、width（宽度）等。
+    </p>
+    <p>
+        （3）、js=javascript是网站中写前后台交互效果、网页动画效果的一种开发语言，比如鼠标点击事件（click）、前后台数据请求（ajax）等。
+    </p>
+    <hr>
+    <h3>5、做一个网站的团队都需要哪些人？</h3>
+    <p>
+         （1）、产品经理：设计这个产品，通常就是了解用户的网站需求，画原型图。
+    </p>
+    <p>
+         （2）、项目经理：通常是对整个产品有一个整理管理和负责，通常是会代码技术的人来构建整个网站的代码框架，以后网站实现的全面管理。
+    </p>
+    <p>
+        （3）、UI设计师，通过原型图画psd设计图的。
+    </p>
+    <p>
+        （4）、前端工程师，根据设计图来做静态网页，可能是原生app的IOS和安卓工程师，或者web端的web前端工程师。
+    </p>
+    <p>
+        （5）、后端工程师，通常就是做java、asp.net、php的工程师来写后端逻辑的工程师。
+    </p>
+    <hr>
+    <h3>6、针对不同屏幕的响应式，UI设计师该做几套设计图？</h3>
+    <p>
+        只做一套，大多UI设计师会使用iPhone5的尺寸来做一套（640X1136）。那么这种可以适配响应式的各种屏幕的吗？这种在HTML5中通过代码中的媒体查询来实现。媒体查询怎么写？媒体查询的具体写法如下：
+    </p>
+    <p>
+        @media screen and (max-width:640px) { //最大宽度是640px的屏幕宽度
+    </p>
+    <p>
+        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;nav li {&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;//nav标签下的li标签设置样式
+    </p>
+    <p>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: inline;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;//转化为行元素
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;}
+    </p>
+    <p>
+        }
+    </p>
+    <hr>
+    <h3>7、div是什么？在div出现之前做网站用什么布局？</h3>
+    <p>
+        div是网站布局的盒子标签，div出现是table布局，因为table布局嵌套很多，网站加载慢，布局层级不清晰。
+    </p>
+    <hr>
+    <h3>8、对前端工程师这个职位你是怎么样理解的？</h3>
+    <p>
+        （1）、 前端是最贴近用户的程序员，前端的能力就是能让产品从 90分进化到 100 分，甚至更好;
+    </p>
+    <p>
+        （2）、 参与项目，快速高质量完成实现效果图，精确到1px；
+    </p>
+    <p>
+        （3）、与团队成员，UI设计，产品经理的沟通；
+    </p>
+    <p>
+        （4）、做好的页面结构，页面重构和用户体验；
+    </p>
+    <p>
+        （5）、处理hack，兼容、写出优美的代码格式；
+    </p>
+    <p>
+        （6）、针对服务器的优化、拥抱最新前端技术。
+    </p>
+    <hr>
+    <h3>9、什么是静态网页？什么叫做动态网页？</h3>
+    <p>
+        （1）、静态网页：没有数据交互的网页，没有数据库参与，没有服务器端数据的加载。比如静态网页就是只有html+css+JavaScript做成的网站。
+    </p>
+    <p>
+        （2）、动态网页：有后台数据参与的网页，网页中的数据是从数据库取的，需要有后台逻辑的支持。比如动态网页就是jsp页面（后台语言是java）、asp页面（后台语言是asp.net）。
+    </p>
+    <hr>
+    <h3>10、前端语言有哪些？后端语言有哪些？</h3>
+    <p>
+         (1)、前端语言：HTML、css、javascript。
+    </p>
+    <p>
+         (2)、后端语言（服务器端语言）：php、java、asp.net。最近新出的node.js
+    </p>
+    <hr>
+    <h3>11、CSS的盒子模型？</h3>
+    <p>
+        （1）、两种， IE 盒子模型、标准W3C 盒子模型；IE 的content部分包含了 border 和 pading;
+    </p>
+    <p>
+        （2）、盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border)。
+    </p>
+    <hr>
+    <h3>12、著名的前端框架都有哪些的呢？</h3>
+    <p>
+        （1）布局框架：bootstrap、easy UI等。
+    </p>
+    <p>
+        （2）Js动效框架：jquery、angular.js等。
+    </p>
+    <hr>
+    <h3>13、为什么要初始化CSS样式。</h3>
+    <p>
+         因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异。
+          当然，初始化样式会对SEO有一定的影响，但鱼和熊掌不可兼得，但力求影响最小的情况下初始化。
+          *最简单的初始化方法就是： * {padding: 0; margin: 0;} 。
+    </p>
+    <hr>
+    <h3>14、浏览器的内核分别是什么?经常遇到的浏览器的兼容性有哪些？</h3>
+    <p>
+        * IE浏览器的内核Trident、 Mozilla（火狐）的Gecko、google（谷歌）的WebKit、Opera内核Presto；
+    </p>
+    <p class="special">
+        * png24为的图片在iE6浏览器上出现背景，解决方案是做成PNG8。
+    </p>
+    <p>
+        * 浏览器默认的margin和padding不同。解决方案是加一个全局的*{margin:0;padding:0;}来统一。
+    </p>
+    <p>
+        * IE6双边距bug:块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大。
+    </p>
+    <hr>
+    <h3>15、CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？</h3>
+    <p>
+        *（1）、id选择器（ # myid）
+    </p>
+    <p class="special">
+        （2）、类选择器（.myclassname）
+    </p>
+    <p class="special">
+         （3）、标签选择器（div, h1, p）
+    </p>
+    <p class="special">
+        （4）、相邻选择器（h1 + p）
+    </p>
+    <p class="special">
+        （5）、子选择器（ul>li）
+    </p>
+    <p class="special">
+            （6）、后代选择器（li a）
+    </p>
+    <p class="special">
+             （7）、通配符选择器（ * ）
+    </p>
+    <p class="special">
+            （8）、属性选择器（a[rel = "external"]）
+    </p>
+    <p class="special">
+            （9）、伪类选择器（a: hover, li: nth - child）
+    </p>
+    <p>
+              *   可继承： font-size font-family color, ul li  dl  dd  dt;
+    </p>
+    <p>
+            *   不可继承 ：border padding margin width height ;
+    </p>
+    <p>
+             *   优先级就近原则，样式定义最近者为准;
+    </p>
+    <p>
+            优先级为:
+    </p>
+    <p class="special">
+             !important >  id > class > tag
+    </p>
+    <p class="special">
+              important 比 内联优先级高
+    </p>
+    <hr>
+    <h3>16、简述一下你对HTML语义化的理解？</h3>
+    <p>
+            （1）用正确的标签做正确的事情。
+    </p>
+    <p>
+            （2）html语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析;
+    </p>
+    <p>
+            （3）即使在没有样式CSS情况下也以一种文档格式显示，并且是容易阅读的;
+    </p>
+    <p>
+            （4）搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，利于SEO;
+    </p>
+    <p>
+            （5）使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。
+    </p>
+    <hr>
+    <h3>17、简述一下src与href的区别？</h3>
+    <p>
+            （1）href 是指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接，用于超链接。
+    </p>
+    <p>
+            （2）src是指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将其指向的资源下载并应用到文档内，例如js脚本，img图片和frame等元素。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也如此，类似于将所指向资源嵌入当前标签内。这也是为什么将js脚本放在底部而不是头部。
+    </p>
+    <hr>
+    <h3>18、什么叫优雅降级和渐进增强？</h3>
+    <p>
+            （1）渐进增强 progressive enhancement：针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验。
+    </p>
+    <p>
+            （2）优雅降级 graceful degradation： 一开始就构建完整的功能，然后再针对低版本浏览器进行兼容。
+    </p>
+    <p>
+            （3）区别： a. 优雅降级是从复杂的现状开始，并试图减少用户体验的供给 b. 渐进增强则是从一个非常基础的，能够起作用的版本开始，并不断扩充，以适应未来环境的需要 c. 降级（功能衰减）意味着往回看；而渐进增强则意味着朝前看，同时保证其根基处于安全地带
+    </p>
+    <hr>
+    <h3>19、清除浮动的几种方式，各自的优缺点？</h3>
+    <p>
+            （1）使用空标签清除浮动 clear:both（理论上能清楚任何标签，，，增加无意义的标签）;
+    </p>
+    <p>
+            （2）使用overflow:auto（空标签元素清除浮动而不得不增加无意代码的弊端,使用zoom:1用于兼容IE）;
+    </p>
+    <p>
+            （3）是用afert伪元素清除浮动(用于非IE浏览器).
+    </p>
+    <hr>
+    <div class="page-header">
+        <h1>JavaScript部分</h1>
+    </div>
+    <h3>1、怎样添加、移除、移动、复制、创建和查找节点？</h3>
+    <p>
+            1）创建新节点 createDocumentFragment() //创建一个DOM片段 createElement() //创建一个具体的元素 createTextNode() //创建一个文本节点;
+    </p>
+    <p>
+            2）添加、移除、替换、插入 appendChild() //添加 removeChild() //移除 replaceChild() //替换 insertBefore() //插入;
+    </p>
+    <p>
+            3）查找 getElementsByTagName() //通过标签名称 getElementsByName() //通过元素的Name属性的值 getElementById() //通过元素Id，唯一性。
+    </p>
+    <hr>
+    <h3>2、请描述一下cookies，sessionStorage和localStorage的区别？</h3>
+    <p>
+            1）sessionStorage用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此sessionStorage不是一种持久化的本地存储，仅仅是会话级别的存储。而localStorage用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的;
+    </p>
+    <p>
+            2）web storage和cookie的区别;
+    </p>
+    <p>
+            3）Web Storage的概念和cookie相似，区别是它是为了更大容量存储设计的。Cookie的大小是受限的，并且每次你请求一个新的页面的时候Cookie都会被发送过去，这样无形中浪费了带宽，另外cookie还需要指定作用域，不可以跨域调用。 除此之外，Web Storage拥有setItem,getItem,removeItem,clear等方法，不像cookie需要前端开发者自己封装setCookie，getCookie。但是Cookie也是不可以或缺的：Cookie的作用是与服务器进行交互，作为HTTP规范的一部分而存在 ，而Web Storage仅仅是为了在本地“存储”数据而生。
+    </p>
+    <hr>
+    <h3>3、Javascript中callee和caller的作用？</h3>
+    <p>
+            1）caller是返回一个对函数的引用，该函数调用了当前函数；
+    </p>
+    <p>
+            2）callee是返回正在被执行的function函数，也就是所指定的function对象的正文。
+    </p>
+    <hr>
+    <h3>4、例举3种强制类型转换和2种隐式类型转换？</h3>
+    <p>
+            1）强制（parseInt,parseFloat,number）；
+    </p>
+    <p>
+            2）隐式（== – ===）。
+    </p>
+    <hr>
+    <h3>5、ajax请求的时候get 和post方式的区别？</h3>
+    <p>
+            1）一个在url后面 一个放在虚拟载体里面；
+    </p>
+    <p>
+            2）有大小限制;
+    </p>
+    <p>
+            3）安全问题；
+    </p>
+    <p>
+            4）应用不同 一个是论坛等只需要请求的，一个是类似修改密码的。
+    </p>
+    <hr>
+    <h3>6、split() join() 的区别？</h3>
+    <p>
+           前者是切割成数组的形式，后者是将数组转换成字符串
+    </p>
+    <hr>
+    <h3>6、数组方法pop() push() unshift() shift()？</h3>
+    <p>
+            1）Push()尾部添加 pop()尾部删除；
+    </p>
+    <p>
+            2）Unshift()头部添加 shift()头部删除。
+    </p>
+    <hr>
+    <h3>7、IE和DOM事件流的区别？</h3>
+    <p>
+            1）执行顺序不一样；
+    </p>
+    <p>
+            2）参数不一样；
+    </p>
+    <p>
+            3）事件加不加on；
+    </p>
+    <p>
+            4）this指向问题。
+    </p>
+    <hr>
+    <h3>8、如何阻止事件冒泡和默认事件？</h3>
+    <p>
+           canceBubble return false
+    </p>
+    <hr>
+    <h3>9、javascript的本地对象，内置对象和宿主对象？</h3>
+    <p>
+            1）本地对象为array obj regexp等可以new实例化；
+    </p>
+    <p>
+            2）内置对象为gload Math 等不可以实例化的；
+    </p>
+    <p>
+            3）宿主为浏览器自带的document,window 等。
+    </p>
+    <hr>
+    <h3>10、document load 和document ready的区别？</h3>
+    <p>
+            1）Document.onload 是在结构和样式加载完才执行js；
+    </p>
+    <p>
+            2）Document.ready原生种没有这个方法，jquery中有 $().ready(function)。
+    </p>
+    <hr>
+</div>
+</body>
+</html>
